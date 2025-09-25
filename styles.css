@@ -6,17 +6,17 @@
 
 #container {
   display: grid;
-  grid-gap: 0.2em;
+  align-content: start;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
+  margin: 5px;
+  width: 500px;
+  height: 500px;
 }
 
 .grid-item {
-  padding: 1em;
-  border: 1px solid #ddd;
+  border: 1px solid #080808;
   background-color: aliceblue;
-  font-size: 1em;
-  text-align: center;
 }
 
 header {
@@ -44,4 +44,9 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #9393a3;
     margin: 20px;
+}
+
+button {
+    text-align: left;
+    padding: 10px;
 }
